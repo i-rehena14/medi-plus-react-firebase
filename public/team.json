@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Chase Franklin",
+        "position": "FOUNDER / CHIEF SURGEON",
+        "img": "https://image.freepik.com/free-photo/portrait-successful-mid-adult-doctor-with-crossed-arms_1262-12865.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Alex Wilson",
+        "position": "ASSISTANT SURGEON",
+        "img": "https://image.freepik.com/free-photo/hospital-healthcare-workers-covid-19-treatment-concept-young-doctor-scrubs-making-daily-errands-clinic-listening-patient-symptoms-look-camera-professional-physician-curing-diseases_1258-57233.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Hubert Jackson",
+        "position": "LEAD NURSE",
+        "img": "https://image.freepik.com/free-photo/healthcare-workers-medicine-covid-19-pandemic-self-quarantine-concept-cheerful-smiling-hispanic-male-nurse-doctor-er-wearing-scrubs-glasses-talking-patient-clinic_1258-58757.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Peggie Cannon",
+        "position": "NURSE",
+        "img": "https://image.freepik.com/free-photo/healthcare-workers-prevent-virus-insurance-medicine-concept-supportive-professional-female-nurse-doctor-blue-scrubs-stethoscope-show-thumbs-up-approval-smiling_1258-57350.jpg"
+    }
+]
