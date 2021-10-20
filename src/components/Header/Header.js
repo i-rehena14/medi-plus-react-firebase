@@ -21,10 +21,15 @@ const Header = () => {
 
                         </Nav>
                         <Nav>
-                            <Nav.Link className="fw-bold" as={Link} to="/login">Login</Nav.Link>
-                            <p className="text-danger">{user.displayName}  </p>
+                            <span className="text-danger">{user.displayName}  </span>
+                            {
+                                user.email ?
+                                    <button onClick={logout}>Log Out</button>
+                                    :
+                                    <Nav.Link className="fw-bold" as={Link} to="/login">Login</Nav.Link>}
+
                             {/* <img className="rounded-circle" src={user.photoURL} alt="" /> */}
-                            {user?.email && <button onClick={logout}>Log Out</button>}
+
                             <Nav.Link className="fw-bold" as={Link} to="/register">Register</Nav.Link>
 
                         </Nav>

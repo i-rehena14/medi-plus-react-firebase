@@ -1,24 +1,47 @@
 import Button from '@restart/ui/esm/Button';
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import image from '../../images/banner2.jpg';
 
 const Login = () => {
-    const { signInUsingGoogle } = useAuth();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+    const { auth, signInUsingGoogle, signInWithEmailAndPassword } = useAuth();
+
+    const handleEmailChange = e => {
+        setEmail(e.target.value);
+    }
+    const handlePasswordChange = e => {
+        setPassword(e.target.value);
+    }
+    const handleSignIn = e => {
+        e.preventDefault();
+        console.log(email, password);
+        signInWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                setError('');
+            })
+            .catch(error => {
+                setError(error.message);
+            })
+    }
     return (
         <div className="d-flex">
             <div className="ms-4 mt-4 border w-50 bg-light">
                 <h1 className="text-center text-danger">Login</h1>
                 <div className="m-4">
-                    <Form>
+                    <Form onSubmit={handleSignIn}>
                         <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
                             <Form.Label column sm={2}>
                                 Email
                             </Form.Label>
                             <Col sm={10}>
-                                <Form.Control type="email" placeholder="Email" />
+                                <Form.Control onBlur={handleEmailChange} type="email" placeholder="Email" />
                             </Col>
                         </Form.Group>
 
@@ -27,12 +50,13 @@ const Login = () => {
                                 Password
                             </Form.Label>
                             <Col sm={10}>
-                                <Form.Control type="password" placeholder="Password" />
+                                <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" />
                             </Col>
                         </Form.Group>
                         <p>Create New account <Link to="/register">Register</Link></p>
                         <Form.Group as={Row} className="mb-3">
                             <Col sm={{ span: 10, offset: 2 }}>
+                                <div className="text-danger">{error}</div>
                                 <Button className="bg-danger border rounded text-white p-2" type="submit">Sign in</Button>
                             </Col>
                         </Form.Group>
@@ -42,7 +66,7 @@ const Login = () => {
                 <div className="text-center">
                     <h3>OR</h3>
                     <p>Sign in with:</p>
-                    <button onClick={signInUsingGoogle}>Google</button>
+                    <button className="bg-primary border rounded text-white p-2" onClick={signInUsingGoogle}>Google</button>
                 </div>
             </div>
             <div className="me-4 mt-4">

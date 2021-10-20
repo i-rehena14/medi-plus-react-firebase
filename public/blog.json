@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Special Offers for client",
+        "date": "19.10.2021",
+        "img": "https://image.freepik.com/free-photo/surgeons-interacting-with-each-other-operation-room_1170-2283.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Examination for Kids",
+        "date": "18.10.2021",
+        "img": "https://t4.ftcdn.net/jpg/03/37/96/97/240_F_337969744_GAAh3BjHs2KnN3JeEwAOzdZQ8s2jSX0Y.jpg"
+    },
+    {
+        "id": 3,
+        "name": "New Services",
+        "date": "15.10.2021",
+        "img": "https://t4.ftcdn.net/jpg/02/81/22/11/240_F_281221101_CxwsXdOWehRUCktwxWYrSdRBS8LZwRoz.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Beta-blocker Therapy",
+        "date": "13.10.2021",
+        "img": "https://t4.ftcdn.net/jpg/02/17/73/09/240_F_217730952_yyCqICU7SwD6p0GbkbL6VvqOYgwkBZqz.jpg"
+    }
+]

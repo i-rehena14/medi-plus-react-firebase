@@ -2,36 +2,48 @@
     {
         "id": 1,
         "name": "Heart surgery",
+        "price": 32400,
+        "doctor": "Chris Martin",
         "description": "Open-heart surgery is any type of surgery where the chest is cut open and surgery is performed on the muscles, valves, or arteries of the heart.",
         "img": "https://image.freepik.com/free-photo/surgeons-interacting-with-each-other-operation-room_1170-2283.jpg"
     },
     {
         "id": 2,
         "name": "Valve prolapse",
+        "price": 27400,
+        "doctor": "Nick Morlan",
         "description": "Your mitral valve, which is located between the two, is designed to allow blood to flow into the left ventricle but blocked from flowing back into the left atrium.",
         "img": "https://t4.ftcdn.net/jpg/03/37/96/97/240_F_337969744_GAAh3BjHs2KnN3JeEwAOzdZQ8s2jSX0Y.jpg"
     },
     {
         "id": 3,
         "name": "Emergencies",
+        "price": 2400,
+        "doctor": "Agatha Grace",
         "description": "Medical emergency is a sudden injury or serious illness that, if not treated right away, could cause death or serious harm to you. We are here for you to overcome the danger.",
         "img": "https://t4.ftcdn.net/jpg/02/81/22/11/240_F_281221101_CxwsXdOWehRUCktwxWYrSdRBS8LZwRoz.jpg"
     },
     {
         "id": 4,
         "name": "Heart transplant",
+        "price": 24800,
+        "doctor": "Reanold Ray",
         "description": "A heart transplant is a surgical procedure used to treat the most serious cases of heart disease. This is a treatment option for people who are in the end stages of heart failure. ",
         "img": "https://t4.ftcdn.net/jpg/02/17/73/09/240_F_217730952_yyCqICU7SwD6p0GbkbL6VvqOYgwkBZqz.jpg"
     },
     {
         "id": 5,
         "name": "Peripheral artery angioplasty",
+        "price": 25000,
+        "doctor": "Chrissie Bien",
         "description": "Angioplasty with stent placement is a minimally invasive procedure used to open narrow or blocked arteries.We have expert doctors to manage.",
         "img": "https://as1.ftcdn.net/v2/jpg/02/71/54/52/1000_F_271545252_C8RBt1d7gm7VfQZ51eR3wZTGsFzybJ0e.jpg"
     },
     {
         "id": 6,
         "name": "Valve Diseases",
+        "price": 24000,
+        "doctor": "Chen Deu",
         "description": "Heart valve disorders can affect any of the valves in your heart. Your heart valves have flaps that open and close with each heartbeat, allowing blood to flow through the heart’s upper and lower chambers and to the rest of your body. ",
         "img": "https://as2.ftcdn.net/v2/jpg/02/17/27/37/1000_F_217273740_67gAVWWCW5ppByvWTdojoN9RikqZh1Pd.jpg"
     }

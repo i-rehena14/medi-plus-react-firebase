@@ -10,7 +10,7 @@ const Service = ({ service }) => {
             <div className="text-center">
                 <h3>{name}</h3>
                 <p className="px-3">{description}</p>
-                <Link to={`/service/${id}`}>
+                <Link to={`/serviceDetails/${id}`}>
                     <button className="btn btn-danger">Details</button>
                 </Link>
             </div>
