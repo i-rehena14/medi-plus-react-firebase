@@ -31,9 +31,9 @@ const Login = () => {
             })
     }
     return (
-        <div className="d-flex">
-            <div className="ms-4 mt-4 border w-50 bg-light">
-                <h1 className="text-center text-danger">Login</h1>
+        <div className="d-lg-flex">
+            <div className="m-4 w-75 border bg-light">
+                <h1 className="m-4 text-danger text-center">Login</h1>
                 <div className="m-4">
                     <Form onSubmit={handleSignIn}>
                         <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
@@ -70,7 +70,7 @@ const Login = () => {
                 </div>
             </div>
             <div className="me-4 mt-4">
-                <img src={image} alt="" />
+                <img className=" w-100" src={image} alt="" />
             </div>
         </div>
     );

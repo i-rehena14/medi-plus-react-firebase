@@ -15,11 +15,11 @@ const Blog = () => {
             <h2 className="fs-1 fw-bold mt-4 mb-4 text-center">Latest <span className="text-danger">News</span> </h2>
             <div className="">
                 {
-                    blogs.map(blog => <Link className="d-flex text-danger"
-                    >
+                    blogs.map(blog => <Link style={{ textDecoration: "none" }} className="d-flex text-danger border "
+                        to="/blog">
                         <img className="w-25 h-25 p-2" src={blog.img} alt="" />
                         <div>
-                            <h2>{blog.name}</h2>
+                            <h3 style={{ color: 'slateblue' }}>{blog.name}</h3>
                             <p>{blog.date}</p>
                         </div>
                     </Link>)

@@ -15,7 +15,7 @@ const Footer = () => {
                     <li>Call us: 880-2313xxx</li>
                 </div>
             </div>
-            <p>Copyright&copy;2021.All rights reserved.</p>
+            <p className="m-0">Copyright&copy;2021.All rights reserved.</p>
         </div>
     );
 };

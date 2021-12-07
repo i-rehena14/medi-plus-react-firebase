@@ -35,8 +35,8 @@ const Register = () => {
             })
     }
     return (
-        <div className="d-flex">
-            <div className="m-4 w-50 border bg-light">
+        <div className="d-lg-flex">
+            <div className="m-4  border bg-light">
                 <h1 className="m-4 text-danger text-center">Register</h1>
                 <div className="m-4">
                     <Form onSubmit={handleSignIn}>
@@ -67,7 +67,7 @@ const Register = () => {
                 </div>
             </div>
             <div className="me-4 mt-4">
-                <img src={image} alt="" />
+                <img className=" w-100" src={image} alt="" />
             </div>
 
         </div>
